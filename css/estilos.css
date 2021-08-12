@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/hojas.jpg');
+    background-attachment: fixed;
+}
+#global{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 5em;
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0px 0px 2em #CCC;
+}
+#logo{
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 2em;
+    letter-spacing: .1em;
+    background: #235E3D;
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    height: 2em;
+    margin-bottom: 1em;
+}
+#menu{
+    font-family: helvetica, arial, helvetica, sans-serif;
+    background: #333;
+    width: 100%;
+    margin-bottom: 2em;
+}
+#menu ul{
+    transition: all 300ms;
+    line-height: 2em;
+}
+#menu ul li{
+    display: inline-block;
+    color: #FFF;
+}
+#menu ul li:hover{
+    background: #235E3D;
+}
+#menu ul li a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 3em;
+}
+#posts{
+    display: inline-block;
+    padding: 1em;
+    width: 70%;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+.post h3{
+    font-size: 2em;
+    color: #000000;
+}
+.post .fecha{
+    display: block;
+    color: #707070;
+    margin: 0.25em 0;
+}
+.post p{
+    line-height: 1.5em;
+    text-align: justify;
+    margin: 1em 0;
+}
+.ver-post{
+    border-radius: .5em;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7em;
+    margin-bottom: 2em;
+    padding: 1em;
+    background: #235E3D;
+    color: #FFF;
+    text-decoration: none;
+}
+#sidebar{
+    border: 1px solid red;
+    float: right;
+    width: 25%;
+    font-family: helvetica, arial;
+    padding: 1em;
+}
+#sidebar h4{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+#sidebar img{
+    width: 100%;
+}
+#sidebar p{
+    margin-bottom: 3em;
+}
+form input[type="email"],
+form input[type="password"]{
+    padding: .25em;
+    margin: .5em auto;
+    width: 100%;
+    border: 1px solid #235E3D;
+    border-radius: .25em;
+}
+form input[type="submit"]{
+    background: #FFF;
+    padding: .5em;
+    border: 1px solid #235E3D;
+    border-radius: .1em;
+    cursor: pointer
+}
+form input[type="submit"]:hover{
+    background: #235E3D;
+    color: #FFF;
+}
+footer{
+    font-family: "Helvetica Neue",arial,sans-serif;
+    color: white;
+    height:  3em;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 4em auto;
+    width: 80%;
+    text-align: center;
+    padding: 1em;
+}
