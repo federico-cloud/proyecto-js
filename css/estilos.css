@@ -50,6 +50,10 @@ body{
     text-decoration: none;
     padding: 3em;
 }
+.bx-wrapper,
+.bx-viewport{
+    height: 300px !important;
+}
 #posts{
     display: inline-block;
     padding: 1em;
@@ -84,7 +88,6 @@ body{
     text-decoration: none;
 }
 #sidebar{
-    border: 1px solid red;
     float: right;
     width: 25%;
     font-family: helvetica, arial;
