@@ -67,4 +67,29 @@ $(document).ready(function() {
         
         return false;
     });
+
+    //Login falso
+    $("#login form").submit(function(){
+
+        var formEmail = $("#formEmail").val();
+        localStorage.setItem("formEmail", formEmail);
+
+    });
+    
+    var formEmail = localStorage.getItem("formEmail");
+
+    if (formEmail != null && formEmail != "undefined") {
+        
+        var sobreMiParrafo = $('#sobre p');
+        
+        sobreMiParrafo.html("Bienvenido " + formEmail);
+        sobreMiParrafo.append("<a href='#' id='logout'>Cerrar sesion</a>");
+
+        $("#login").hide();
+        
+        $("#logout").click(function(){
+            location.reload();
+            localStorage.clear();
+        });
+    } 
 });
