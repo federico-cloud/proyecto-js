@@ -21,7 +21,6 @@ body{
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 2em;
     letter-spacing: .1em;
-    background: #235E3D;
     color: #FFF;
     text-align: center;
     width: 100%;
@@ -40,19 +39,20 @@ body{
 }
 #menu ul li{
     display: inline-block;
-    color: #FFF;
 }
 #menu ul li:hover{
     background: #235E3D;
 }
 #menu ul li a{
+    margin: 0 1em;
+    padding: 1em;
     color: #FFF;
     text-decoration: none;
-    padding: 3em;
 }
 .bx-wrapper,
 .bx-viewport{
     height: 300px !important;
+    border: none !important;
 }
 #posts{
     display: inline-block;
@@ -83,7 +83,6 @@ body{
     width: 7em;
     margin-bottom: 2em;
     padding: 1em;
-    background: #235E3D;
     color: #FFF;
     text-decoration: none;
 }
@@ -100,7 +99,6 @@ body{
 }
 #sidebar img{
     width: 100%;
-    border: 2px solid #235E3D;
 }
 #sidebar p{
     margin-bottom: 3em;
@@ -108,29 +106,59 @@ body{
 form input[type="email"],
 form input[type="password"]{
     padding: .25em;
+    display: block;
     margin: .5em auto;
-    width: 100%;
-    border: 1px solid #235E3D;
+    width: 80%;
     border-radius: .25em;
 }
 form input[type="submit"]{
     background: #FFF;
     padding: .5em;
-    border: 1px solid #235E3D;
     border-radius: .1em;
-    cursor: pointer
+    cursor: pointer;
+    margin-left: 10%;
 }
 form input[type="submit"]:hover{
-    background: #235E3D;
     color: #FFF;
 }
 footer{
     font-family: "Helvetica Neue",arial,sans-serif;
-    color: white;
-    height:  3em;
+    color: #FFF;
+    height:  4em;
     background: rgba(51, 51, 51, 0.70);
     margin: 4em auto;
     width: 80%;
-    text-align: center;
     padding: 1em;
+}
+.subir{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    float: right;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#cambiar-color{
+    height: 15%;
+    width: 6%;
+    position:fixed;
+    top:40%;
+    background: rgba(51, 51, 51, 0.7)
+}
+#verde,
+#azul,
+#rojo{
+    width: 100%;
+    height: 33%;
+    cursor: pointer;
+}
+#verde{
+    background: #235E3D;
+}
+#azul{
+    background: #1F87C4;
+}
+#rojo{
+    background: #CA3413;
 }

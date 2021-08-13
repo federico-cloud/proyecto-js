@@ -43,4 +43,28 @@ $(document).ready(function() {
 
     $('#posts').append(post);
     });
+
+    //Selector de tema
+    var tema = $('#theme')
+    $('#verde').click(function(){
+        tema.attr('href', 'css/verde.css');
+    });
+
+    $('#azul').click(function(){
+        tema.attr('href', 'css/azul.css');
+    });
+
+    $('#rojo').click(function(){
+        tema.attr('href', 'css/rojo.css');
+    });
+
+    //Scroll al principio
+    $('.subir').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop:0
+        },500);
+        
+        return false;
+    });
 });
