@@ -12,7 +12,7 @@ body{
     background: #1F87C4;
 }
 #sidebar img{
-    border-color:  1px solid#1F87C4;
+    border:  2px solid#1F87C4;
 }
 form input[type="email"],
 form input[type="password"]{
