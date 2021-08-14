@@ -96,4 +96,17 @@ $(document).ready(function() {
             localStorage.clear();
         });
     } 
+
+    //Validacion de datos
+    if(window.location.href.indexOf('contacto') > 1){
+        $("form input[name='date']").datepicker({
+            dateFormat: "dd-mm-yy"
+        });
+
+        $.validate({
+            lang: 'es',
+            errorMessagePosition: 'top',
+            scrollToTopOnError: true
+        });
+    }
 });
